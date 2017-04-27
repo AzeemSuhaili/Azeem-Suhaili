@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CO5027topic {
+namespace POM_COLLECTIONS_WEBSITE {
     
     
-    public partial class Contact1 {
+    public partial class contact {
     }
 }

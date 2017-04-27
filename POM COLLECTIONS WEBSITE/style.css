@@ -1,6 +1,6 @@
 ﻿body { 
 font-family:Arial;
-background:#777777 url(images/pomade7.jpg);
+background:#777777 url(images/pomade6.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -9,17 +9,13 @@ background-attachment: fixed;
 body *{
 padding:0; 
 margin:0; 
-
 border:none; 
-
 }
 
 
 p {color:#A3A09F; font-size:16px; margin:0 0 20px 0;}
 
-img {margin:0px 0 20px 0;
-}
-
+img {margin:0px 0 20px 0;}
 
 h1 {color:#A3A09F; font-size:24px; text-align:center; margin:20px 0 10px 0;}
 
@@ -34,6 +30,7 @@ a:hover{color:#A3A09F;}
 .site{
 width:960px;
 margin:0 auto;
+    height: 140px;
 }
 
 .header {}
@@ -44,6 +41,7 @@ margin:0 auto;
 	padding:15px; 
 	text-align:center; 
 	margin:0 0 30px 0;
+    width: 100%;
 }
 
 .header .navigation a {
@@ -86,7 +84,7 @@ float:right;
 margin:0 0 20px 0;
 }
 
-.footer {clear:both; padding:5px; background-color:#1C1C1C;}
+.footer {clear:both; padding:5px; background-color:#1C1C1C; width:100%;}
 
 .footer p {margin:0; color:#ffffff; font-size:10px; text-align:center; }
 
@@ -113,8 +111,41 @@ margin:0 0 20px 0;
 .content .column_right h2 {margin:0 0 10px 0;}
 
 
-#images{
-		background:url(white image.jpg);
-		width: 960px;
-		height: 600px;
-		background-position: center;
+ .shopNow{
+             color:#0C0C0C; background-color:#3E4040; z-index:1; opacity:.1; font-family:Calibri; font-size: 20px; border-radius: 6px; width:250px; height:67px; position: absolute; top:466px; left:550px;
+          }
+
+ .container {
+
+     background-color:#5D5C5C   ;
+     width: 510px;
+     height: 320px;
+   
+ }
+ .container p{
+     color: #080808;
+     text-align: left;
+     
+ }
+
+    .container h4 {
+        text-align: center;
+    }
+
+.header{
+    width:100%;
+    top:400px;
+}
+
+#price{
+    color:white;
+    float: right;
+    
+}
+
+#select{
+    color:white;
+    float: right;
+   
+
+}

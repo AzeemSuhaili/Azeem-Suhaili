@@ -11,7 +11,7 @@ namespace POM_COLLECTIONS_WEBSITE
 {
 
 
-    public partial class _default
+    public partial class products
     {
     }
 }
