@@ -6,14 +6,28 @@
 
     <p><asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label>
     <asp:TextBox ID="TxtName" runat="server"></asp:TextBox></p>
-         <asp:RequiredFieldValidator ID="TxtNameValidator" runat="server" ErrorMessage="Fill Username" ControlToValidate="TxtName"></asp:RequiredFieldValidator>
+         <asp:RequiredFieldValidator 
+             ID="TxtNameValidator" 
+             runat="server" 
+             forecolor="red" 
+             ErrorMessage="Fill Username" 
+             ControlToValidate="TxtName">
+
+         </asp:RequiredFieldValidator>
     <p><asp:Label ID="Label2" runat="server" Text="Email:"></asp:Label>
-    <asp:TextBox ID="TxtEmail" runat="server"></asp:TextBox></p>
-           <asp:RequiredFieldValidator ID="TxtEmailValidator" runat="server" ErrorMessage="Fill Email" ControlToValidate="TxtEmail"></asp:RequiredFieldValidator>
+    <asp:TextBox ID="TxtEmail" runat="server" TextMode="Email"></asp:TextBox></p>
+           <asp:RequiredFieldValidator 
+               ID="TxtEmailValidator" 
+               runat="server" 
+               forecolor="red" 
+               ErrorMessage="Fill Email" 
+               ControlToValidate="TxtEmail">
+
+           </asp:RequiredFieldValidator>
 
     <p><asp:Label ID="Label3" runat="server" Text="Comments:"></asp:Label>
     <asp:TextBox ID="TxtComments" runat="server"></asp:TextBox></p>
-           <asp:RequiredFieldValidator ID="TxtCommentsValidator" runat="server" ErrorMessage="Fill Comments" ControlToValidate="TxtComments"></asp:RequiredFieldValidator>
+           <asp:RequiredFieldValidator ID="TxtCommentsValidator" runat="server" forecolor="red" ErrorMessage="Fill Comments" ControlToValidate="TxtComments"></asp:RequiredFieldValidator>
 
 			<%--<fieldset style="width:240px; height:200px; border-margin:10px; position: absolute; top:70px; left:230px;"/>
 				<input class="btn" type="submit" value="Send Email"/>
@@ -32,15 +46,18 @@
        <br />Twitter: @PomadeCollections </p>
 
         <div id="map" style="width:660px; height:380px; position: absolute; top:90px; left:530px;"></div>
-
+           ()
         <script>
             function myMap() {
-                var mapOptions = {
-                    center: new google.maps.LatLng(4.9055786, 114.91670120000003),
-                    zoom: 10,
-                    mapTypeId: google.maps.MapTypeId.HYBRID
-                }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var uluru = {lat: 4.885731, lng: 114.931669 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
             }
         </script>
 
